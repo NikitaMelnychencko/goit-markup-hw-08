@@ -1,0 +1,40 @@
+.section__title {
+  margin-bottom: 50px;
+  color: $tiile-text-color;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.section__doing {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+.card-image--no-gap {
+  display: block;
+}
+.doing-list__item {
+  width: 370px;
+}
+.product-thumb {
+  position: relative;
+}
+.box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 370px;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+.box__title {
+  color: $primary-background-color;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0;
+}

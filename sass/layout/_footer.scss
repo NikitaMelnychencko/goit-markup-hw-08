@@ -1,0 +1,109 @@
+footer {
+  background-color: $secondary-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container--flex {
+  display: flex;
+  align-items: baseline;
+}
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+.logo--white {
+  color: $primary-background-color;
+}
+.address__location {
+  color: $primary-background-color;
+  line-height: 1.71;
+}
+.contact-footer__link {
+  color: $contact-text-footer-color;
+  line-height: 1.71;
+  text-decoration: none;
+
+  &--shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.contact-footer__item,
+.address__location {
+  margin-bottom: 9px;
+  display: block;
+}
+.contact-footer__item:nth-child(2) {
+  margin-bottom: 0;
+}
+.social-network-footer {
+  margin-left: 70px;
+}
+.social-network-footer__titel {
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-background-color;
+}
+.social-network-list {
+  display: flex;
+  margin-top: 20px;
+}
+.social-network-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.social-network-list__svg {
+  height: 20px;
+  width: 20px;
+  fill: $primary-background-color;
+}
+.social-network-list__item + .social-network-list__item {
+  margin-left: 10px;
+}
+
+.form-footer {
+  margin-left: auto;
+}
+.form-footer__text {
+  line-height: 1.142;
+  text-transform: uppercase;
+
+  color: $primary-background-color;
+}
+.grup {
+  display: flex;
+  align-items: baseline;
+  margin-top: 20px;
+}
+.grup__form-field input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 0 15px 16px;
+
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

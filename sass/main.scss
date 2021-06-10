@@ -1,0 +1,24 @@
+// root
+@import './utils/variables';
+
+// global class
+@import './base/globalClass';
+@import './base/reset';
+
+//components
+@import './components/buttun';
+@import './components/backdrop';
+
+//layout
+//heder
+@import './layout/header';
+//main-index.html
+@import './layout/hiroy';
+@import './layout/particular-qualities';
+@import './layout/what-are-we-doing';
+@import './layout/team';
+@import './layout/regular-customers';
+//main-partdolio.html
+@import './layout/partfolio';
+//footer
+@import './layout/footer';

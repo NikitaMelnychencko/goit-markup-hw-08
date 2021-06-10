@@ -1,0 +1,32 @@
+.qualities-list,
+.doing-list,
+.team-list {
+  display: flex;
+}
+.qualities-list__item + .qualities-list__item,
+.doing-list__item + .doing-list__item,
+.team-list__item + .team-list__item {
+  margin-left: 30px;
+}
+.qualities-list__item,
+.team-list___item {
+  width: 270px;
+}
+.qualities-list__title {
+  color: $tiile-text-color;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.qualities-list__icon-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: $third-background-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.qualities-list__svg-qualities {
+  width: 70px;
+  height: 70px;
+}
