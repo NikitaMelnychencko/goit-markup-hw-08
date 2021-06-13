@@ -1,5 +1,14 @@
 .regular-customers-list {
   display: flex;
+
+  @media screen and (min-width: 320px) and (max-width: 1119px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
 .regular-customers-list__svg-company {
@@ -12,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid $regular-customers-color;
   border-radius: 4px;
@@ -21,6 +30,12 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
   .regular-customers-list &:hover,
   .regular-customers-list &:focus {
     border: 1px solid $accent-color;
@@ -28,6 +43,13 @@
   }
 }
 
-.regular-customers-list__item + .regular-customers-list__item {
-  margin-left: 30px;
+.regular-customers-list__item {
+  @media screen and (min-width: 320px) and (max-width: 1119px) {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .regular-customers-list__item + .regular-customers-list__item {
+    margin-left: 30px;
+  }
 }

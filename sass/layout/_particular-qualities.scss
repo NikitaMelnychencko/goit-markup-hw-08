@@ -1,17 +1,103 @@
 .qualities-list,
 .doing-list,
 .team-list {
-  display: flex;
-}
-.qualities-list__item + .qualities-list__item,
-.doing-list__item + .doing-list__item,
-.team-list__item + .team-list__item {
-  margin-left: 30px;
+  display: block;
+  @media screen and (min-width: $tablet) and (max-width: 1119px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .qualities-list__item,
-.team-list___item {
-  width: 270px;
+.team-list__item {
+  width: 450px;
+  margin-bottom: 30px;
+
+  &:nth-last-child(-n + 1) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1119px) {
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
 }
+
+@media screen and (min-width: $desktop) {
+  .qualities-list__item + .qualities-list__item,
+  .doing-list__item + .doing-list__item,
+  .team-list__item + .team-list__item {
+    margin-left: 30px;
+  }
+}
+
+/*
+@media screen and (min-width: $mobile) and (max-width: 767px) {
+  .qualities-list,
+  .team-list {
+    display: block;
+  }
+  .qualities-list__item,
+  .team-list__item {
+    width: 450px;
+    margin-bottom: 30px;
+
+    &:nth-last-child(-n + 1) {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: 1119px) {
+  .qualities-list,
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .qualities-list__item,
+  .team-list__item {
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: $desktop) {
+  .qualities-list,
+  .doing-list,
+  .team-list {
+    display: flex;
+  }
+  .qualities-list__item + .qualities-list__item,
+  .doing-list__item + .doing-list__item,
+  .team-list__item + .team-list__item {
+    margin-left: 30px;
+  }
+  .qualities-list__item,
+  .team-list__item {
+    width: 270px;
+  }
+}
+*/
 .qualities-list__title {
   color: $tiile-text-color;
   line-height: 1.14;

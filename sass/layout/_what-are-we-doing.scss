@@ -1,3 +1,8 @@
+@media screen and (min-width: 0) and (max-width: 1119px) {
+  .section__doing {
+    display: none;
+  }
+}
 .section__title {
   margin-bottom: 50px;
   color: $tiile-text-color;
