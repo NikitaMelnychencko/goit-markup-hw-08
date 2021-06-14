@@ -1,7 +1,7 @@
 .regular-customers-list {
   display: flex;
 
-  @media screen and (min-width: 320px) and (max-width: 1119px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     flex-wrap: wrap;
     margin: -15px;
   }
@@ -44,7 +44,7 @@
 }
 
 .regular-customers-list__item {
-  @media screen and (min-width: 320px) and (max-width: 1119px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     margin: 15px;
   }
 }

@@ -1,6 +1,8 @@
-@media screen and (min-width: 0) and (max-width: 1119px) {
-  .section__doing {
-    display: none;
+.section__doing {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    padding-top: 0;
+    padding-bottom: 94px;
   }
 }
 .section__title {
@@ -9,10 +11,6 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-.section__doing {
-  padding-top: 0;
-  padding-bottom: 94px;
 }
 .card-image--no-gap {
   display: block;
