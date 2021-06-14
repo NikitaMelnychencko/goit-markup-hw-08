@@ -559,7 +559,6 @@ textarea {
   position: absolute;
   top: 100%;
   left: 0;
-  margin-left: auto;
   width: 100%;
   height: 796px;
   background-color: #ffffff;
@@ -774,13 +773,19 @@ textarea {
 
 .qualities-list__item,
 .team-list__item {
-  width: 450px;
   margin-bottom: 30px;
 }
 
 .qualities-list__item:nth-last-child(-n + 1),
 .team-list__item:nth-last-child(-n + 1) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 450px) {
+  .qualities-list__item,
+  .team-list__item {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

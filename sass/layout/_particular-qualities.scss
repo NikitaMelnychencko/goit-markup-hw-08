@@ -12,11 +12,13 @@
 }
 .qualities-list__item,
 .team-list__item {
-  width: 450px;
   margin-bottom: 30px;
 
   &:nth-last-child(-n + 1) {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 450px) {
+    width: 450px;
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     width: 354px;
