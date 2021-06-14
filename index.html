@@ -21,6 +21,34 @@
           <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
           <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>  
         </ul>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg 
+          class="menu-button__svg"
+          aria-label="Переключатель мобильного меню"
+          >
+            <use class="menu-button__menu" href="./images/icon.svg#icon-menu_burger"></use>
+            <use class="menu-button__cross" href="./images/icon.svg#icon-menu_burger_close"></use>
+            
+          </svg>
+        </button>
+        <div class="menu-container-nav" id="menu-container" data-menu>
+          <ul>
+            <li><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
+            <li><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+            <li><a href="" class="site-nav__link">Контакты</a></li>
+          </ul>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+        </div>
       </nav>
       <ul class="contact-header">
         <li class="contact-header__item"><a href="mailto:info@devstudio.com" class="contact-header__link" lang="en"><svg class="contact-header__svg-email">
@@ -358,6 +386,7 @@
       
   </script>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   <script>
     (() => {
       document.querySelectorAll('.js-speaker-form').forEach(elem =>
