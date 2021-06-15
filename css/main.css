@@ -8,6 +8,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -508,7 +512,7 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
