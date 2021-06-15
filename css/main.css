@@ -794,6 +794,8 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-social-network-mobile__item + .header-social-network-mobile__item {
@@ -1107,7 +1109,7 @@ textarea {
           justify-content: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .regular-customers-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1561,7 +1563,7 @@ footer {
 }
 
 .grup__form-field input {
-  width: 300px;
+  width: 200px;
   height: 50px;
   padding: 15px 0 15px 16px;
   line-height: 1.25;

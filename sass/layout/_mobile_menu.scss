@@ -64,6 +64,7 @@
 
 .header-social-network-mobile {
   display: flex;
+  flex-wrap: wrap;
 }
 .header-social-network-mobile__item + .header-social-network-mobile__item {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
