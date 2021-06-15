@@ -9,7 +9,7 @@ menuBtnRef.addEventListener("click", () => {
   menuBtnRef.classList.toggle("menu-button--is-open");
   menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-  mobileMenuRef.classList.toggle("menu-container-nav--is-open");
+  mobileMenuRef.classList.toggle("menu-container-mobile--is-open");
     
 });
 })();
