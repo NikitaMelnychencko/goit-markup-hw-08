@@ -1,5 +1,6 @@
 .regular-customers-list {
   display: flex;
+  justify-content: center;
 
   @media screen and (min-width: 320px) and (max-width: 1199px) {
     flex-wrap: wrap;

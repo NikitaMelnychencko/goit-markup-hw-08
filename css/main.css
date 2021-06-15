@@ -234,6 +234,7 @@ p {
   border: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 3;
 }
 
 .menu-button:hover, .menu-button:focus {
@@ -305,12 +306,6 @@ p {
 }
 
 .modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 528px;
   padding: 40px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -318,9 +313,25 @@ p {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 /*=====Form=======*/
 .form {
-  width: 448px;
   margin: 0 auto 0 auto;
   text-align: center;
 }
@@ -412,29 +423,38 @@ textarea {
 }
 
 .form__checkbox-agreement-conditions input[type='checkbox'] {
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   position: absolute;
   width: 16px;
   height: 15px;
   bottom: 126px;
-  left: 52px;
-  /*position: absolute;
+  left: 52px;;*/
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;*/
+  overflow: hidden;
 }
 
 .form__text,
 .form__checkbox-link {
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__text,
+  .form__checkbox-link {
+    line-height: 1.71;
+  }
 }
 
 .form__text {
@@ -470,12 +490,13 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.checkbox:focus + .icon-check {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 0 2px red;
+.form__checkbox:focus + .form__icon-check,
+.form__checkbox:checked:focus + .form__icon-check {
+  outline: 2px solid #2196f3;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox:checked:focus + .icon-check {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 0 2px red;
-}*/
+
 .form__svg-phone,
 .form__svg-mail,
 .form__svg-human {
@@ -512,7 +533,7 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 60px;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
@@ -557,11 +578,15 @@ textarea {
           align-items: center;
 }
 
-/*=======menucontainer tablet and desktop=======*/
+.header-container--flex {
+  position: relative;
+}
+
+/*=======menucontainer mobile=======*/
 .menu-container-nav {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 796px;
@@ -741,10 +766,17 @@ textarea {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .qualities-list,
@@ -1008,6 +1040,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
@@ -1464,7 +1499,7 @@ footer {
 }
 
 .grup__form-field input {
-  width: 450px;
+  width: 300px;
   height: 50px;
   padding: 15px 0 15px 16px;
   line-height: 1.25;
@@ -1496,6 +1531,12 @@ footer {
 .grup__form-field input::placeholder {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 480px) {
+  .grup__form-field input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
