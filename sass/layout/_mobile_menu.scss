@@ -16,6 +16,8 @@
 
   &--is-open {
     display: block;
+    //overflow-x: scroll;
+    //overflow-y: scroll;
   }
 }
 
@@ -57,8 +59,11 @@
   text-decoration: none;
 
   &--blue {
-    font-size: 34px;
     color: $accent-color;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 34px;
+    }
   }
 }
 

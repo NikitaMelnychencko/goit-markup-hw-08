@@ -8,6 +8,7 @@ menuBtnRef.addEventListener("click", () => {
   
   menuBtnRef.classList.toggle("menu-button--is-open");
   menuBtnRef.setAttribute("aria-expanded", !expanded);
+  document.body.classList.toggle("modal-open");
 
   mobileMenuRef.classList.toggle("menu-container-mobile--is-open");
     

@@ -786,8 +786,13 @@ textarea {
 }
 
 .contact-header-mobile__link--blue {
-  font-size: 34px;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .contact-header-mobile__link--blue {
+    font-size: 34px;
+  }
 }
 
 .header-social-network-mobile {
