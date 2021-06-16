@@ -13,8 +13,6 @@ footer {
     align-items: baseline;
   }
   @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: baseline;
     text-align: left;
   }
 }

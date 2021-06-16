@@ -45,11 +45,9 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: 93px;
+    margin-left: 88px;
   }
-
   @media screen and (min-width: $desktop) {
-    display: flex;
     margin-left: 93px;
   }
 }
@@ -108,7 +106,6 @@
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    margin-left: auto;
   }
 }
 
@@ -128,8 +125,6 @@
     padding-bottom: 0;
   }
   @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
     padding-top: 31px;
     padding-bottom: 31px;
   }
