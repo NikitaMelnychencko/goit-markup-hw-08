@@ -1,6 +1,7 @@
 .section__doing {
   display: none;
   @media screen and (min-width: $desktop) {
+    display: block;
     padding-top: 0;
     padding-bottom: 94px;
   }
@@ -14,6 +15,8 @@
 }
 .card-image--no-gap {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .doing-list__item {
   width: 370px;

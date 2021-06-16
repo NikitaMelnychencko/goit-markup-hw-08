@@ -1,5 +1,5 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-color: $secondary-background-color;
@@ -8,13 +8,60 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hiro.jpg);
+    url(../images/mobile/hiro/hiro_mobile.jpg);
+  background-size: 480px 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/mobile/hiro/hiro_mobile@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet/hiro/hiro_tablet.jpg);
+    background-size: 768px 400px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: url(../images/tablet/hiro/hiro_tablet@2x.jpg);
+      }
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/desktop/hiro/hiro_desktop.jpg);
+    background-size: 1600px 600px;
+    padding: 200px 0;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .hero {
+        background-image: url(../images/desktop/hiro/hiro_desktop@2x.jpg);
+      }
+    }
+  }
 }
+
 .hero__title {
   margin-bottom: 30px;
   color: $primary-background-color;

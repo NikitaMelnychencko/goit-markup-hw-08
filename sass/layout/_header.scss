@@ -136,7 +136,7 @@
 }
 
 .contact-header .contact-header__item + .contact-header__item {
-  @media screen and (max-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-top: 10px;
   }
   @media screen and (min-width: $desktop) {
