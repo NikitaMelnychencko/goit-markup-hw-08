@@ -200,17 +200,16 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list__item">
-            <img 
-              class="card-image card-image--no-gap" 
-              srcset="./images/mobile/team/designer.jpg 1x,
-                ./images/mobile/team/designer@2x.jpg 2x,
-                ./images/tablet/team/designer.jpg 1x,
-                ./images/tablet/team/designer@2x.jpg 2x,                
-                ./images/desktop/team/designer.jpg 1x,
-                ./images/desktop/team/designer@2x.jpg 2x"  
-              src="./images/mobile/team/designer.jpg" 
-              alt="Дизайнер_продуктов"  
-            >
+            <picture>
+              <source srcset="./images/mobile/team/product.jpg 1x, ./images/mobile/team/product@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source srcset="./images/tablet/team/product.jpg 1x, ./images/tablet/team/product@2x.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source srcset="./images/desktop/team/product.jpg 1x, ./images/desktop/team/product@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="card-image card-image--no-gap" src="./images/mobile/team/product.jpg"
+                alt="Дизайнер_пользовательского_интерфейса" />
+            </picture>
             <div class="content-team">
               <h3 class="content-team__title">Игорь Демьяненко</h3>  
               <p class="content-team__text" lang="en"> Product Designer </p>
@@ -236,16 +235,15 @@
           
           </li>
           <li class="team-list__item">
-            <img class="card-image card-image--no-gap" 
-              srcset="./images/mobile/team/frontend.jpg 1x,
-                ./images/mobile/team/frontend@2x.jpg 2x,
-                ./images/tablet/team/frontend.jpg 1x,
-                ./images/tablet/team/frontend@2x.jpg 2x,                
-                ./images/desktop/team/frontend.jpg 1x,
-                ./images/desktop/team/frontend@2x.jpg 2x"  
-              src="./images/mobile/team/frontend.jpg" 
-              alt="Фронтенд-разработчик" 
-            >
+            <picture>
+              <source srcset="./images/mobile/team/frontend.jpg 1x, ./images/mobile/team/frontend@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source srcset="./images/tablet/team/frontend.jpg 1x, ./images/tablet/team/frontend@2x.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source srcset="./images/desktop/team/frontend.jpg 1x, ./images/desktop/team/frontend@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="card-image card-image--no-gap" src="./images/mobile/team/frontend.jpg" alt="Фронтенд-разработчик" />
+            </picture>
             <div class="content-team">
               <h3 class="content-team__title">Ольга Репина</h3>
               <p class="content-team__text" lang="en"> Frontend Developer </p>
@@ -270,16 +268,15 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img class="card-image card-image--no-gap"
-              srcset="./images/mobile/team/marketing.jpg 1x,
-                ./images/mobile/team/marketing@2x.jpg 2x,
-                ./images/tablet/team/marketing.jpg 1x,
-                ./images/tablet/team/marketing@2x.jpg 2x,                
-                ./images/desktop/team/marketing.jpg 1x,
-                ./images/desktop/team/marketing@2x.jpg 2x"  
-              src="./images/mobile/team/marketing.jpg"             
-              alt="Маркетолог" 
-            >
+            <picture>
+              <source srcset="./images/mobile/team/marketing.jpg 1x, ./images/mobile/team/marketing@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source srcset="./images/tablet/team/marketing.jpg 1x, ./images/tablet/team/marketing@2x.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source srcset="./images/desktop/team/marketing.jpg 1x, ./images/desktop/team/marketing@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="card-image card-image--no-gap" src="./images/mobile/team/marketing.jpg" alt="Маркетолог" />
+            </picture>  
             <div class="content-team">
               <h3 class="content-team__title">Николай Тарасов</h3>
               <p class="content-team__text" lang="en"> Marketing </p>
@@ -304,15 +301,15 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img class="card-image card-image--no-gap" 
-              srcset="./images/mobile/team/product.jpg 1x,
-                ./images/mobile/team/product@2x.jpg 2x,
-                ./images/tablet/team/product.jpg 1x,
-                ./images/tablet/team/product@2x.jpg 2x,                
-                ./images/desktop/team/product.jpg 1x,
-                ./images/desktop/team/product@2x.jpg 2x"  
-              src="./images/mobile/team/product.jpg"
-              alt="Дизайнер_пользовательского_интерфейса" >
+            <picture>
+              <source srcset="./images/mobile/team/designer.jpg 1x,./images/mobile/team/designer@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source srcset="./images/tablet/team/designer.jpg 1x,./images/tablet/team/designer@2x.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source srcset="./images/desktop/team/designer.jpg 1x,./images/desktop/team/designer@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <img class="card-image card-image--no-gap" src="./images/mobile/team/designer.jpg" alt="Дизайнер_продуктов" />
+            </picture>                 
             <div class="content-team">
               <h3 class="content-team__title">Михаил Ермаков</h3>
               <p class="content-team__text" lang="en"> UI Designer </p>
