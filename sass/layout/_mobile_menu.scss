@@ -1,6 +1,11 @@
 .header-container--flex {
   position: relative;
+
+  body.modal-open & {
+    position: initial;
+  }
 }
+
 /*=======menucontainer mobile=======*/
 .menu-container-mobile {
   display: none;
@@ -8,13 +13,15 @@
   top: 0;
   left: 0;
   width: 100%;
-
+  height: 100vh;
   padding: 48px 40px;
 
   background-color: $primary-background-color;
 
   &--is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     //overflow-x: scroll;
     //overflow-y: scroll;
   }
@@ -45,7 +52,6 @@
 }
 
 .contact-header-mobile {
-  margin-top: 302px;
   margin-bottom: 64px;
 }
 .contact-header-mobile__link {
