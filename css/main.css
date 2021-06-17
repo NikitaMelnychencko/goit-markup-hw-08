@@ -1370,11 +1370,13 @@ body.modal-open .header-container--flex {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list__link:hover .product-overlay,
-.portfolio-list__link:focus .product-overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
+@media screen and (min-width: 768px) {
+  .portfolio-list__link:hover .product-overlay,
+  .portfolio-list__link:focus .product-overlay {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 footer {

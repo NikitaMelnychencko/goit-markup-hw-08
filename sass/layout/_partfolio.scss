@@ -148,9 +148,11 @@
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .portfolio-list__link:hover &,
-  .portfolio-list__link:focus & {
-    transform: translateY(0);
-    opacity: 1;
+  @media screen and (min-width: $tablet) {
+    .portfolio-list__link:hover &,
+    .portfolio-list__link:focus & {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
