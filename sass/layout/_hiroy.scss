@@ -24,7 +24,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 481px) and (max-width: $tablet) {
     max-width: 768px;
     background-image: linear-gradient(
         to right,
@@ -41,7 +41,7 @@
       }
     }
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 769px) {
     max-width: 1600px;
     background-image: linear-gradient(
         to right,
