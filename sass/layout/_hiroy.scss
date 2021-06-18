@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/mobile/hiro/hiro_mobile.jpg);
-  background-size: 480px 400px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,7 +32,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/tablet/hiro/hiro_tablet.jpg);
-    background-size: 768px 400px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -49,9 +48,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/desktop/hiro/hiro_desktop.jpg);
-    background-size: 1600px 600px;
-    padding: 200px 0;
-
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -59,6 +55,9 @@
         background-image: url(../images/desktop/hiro/hiro_desktop@2x.jpg);
       }
     }
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0;
   }
 }
 

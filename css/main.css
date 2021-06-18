@@ -842,7 +842,7 @@ body.modal-open .header-container--flex {
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile/hiro/hiro_mobile.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hiro/hiro_mobile.jpg);
-  background-size: 480px 400px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -861,7 +861,6 @@ body.modal-open .header-container--flex {
     max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet/hiro/hiro_tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hiro/hiro_tablet.jpg);
-    background-size: 768px 400px;
   }
 }
 
@@ -876,14 +875,18 @@ body.modal-open .header-container--flex {
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop/hiro/hiro_desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hiro/hiro_desktop.jpg);
-    background-size: 1600px 600px;
-    padding: 200px 0;
   }
 }
 
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero .hero {
     background-image: url(../images/desktop/hiro/hiro_desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
   }
 }
 
@@ -1370,7 +1373,7 @@ body.modal-open .header-container--flex {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio-list__link:hover .product-overlay,
   .portfolio-list__link:focus .product-overlay {
     -webkit-transform: translateY(0);
