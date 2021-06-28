@@ -52,11 +52,14 @@ footer {
 }
 .social-network-footer {
   margin-bottom: 60px;
+
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-left: 165px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: $desktop) {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 .social-network-footer__titel {

@@ -469,6 +469,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .form__text,
   .form__checkbox-link {
+    font-size: 14px;
     line-height: 1.71;
   }
 }
@@ -1464,12 +1465,14 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .social-network-footer {
     margin-left: 165px;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .social-network-footer {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
