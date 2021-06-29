@@ -260,6 +260,11 @@ p {
   .menu-button {
     display: none;
   }
+  .menu-button--is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .menu-button__svg {

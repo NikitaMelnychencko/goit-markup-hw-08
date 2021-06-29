@@ -158,6 +158,10 @@
 
   @media screen and (min-width: $tablet) {
     display: none;
+
+    &--is-open {
+      display: flex;
+    }
   }
 }
 .menu-button__svg {
