@@ -12,6 +12,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+body.modal-open-backfrop {
+  overflow: hidden;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -767,6 +771,7 @@ body.modal-open .header-container--flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow-x: scroll;
 }
 
 .site-nav-mobile__link {
@@ -822,8 +827,13 @@ body.modal-open .header-container--flex {
       flex-wrap: wrap;
 }
 
+.header-social-network-mobile__item:nth-child(1) {
+  padding: 0 10px 0 0;
+}
+
 .header-social-network-mobile__item + .header-social-network-mobile__item {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0 10px;
 }
 
 .header-social-network-mobile__link {
@@ -831,7 +841,6 @@ body.modal-open .header-container--flex {
   font-size: 18px;
   line-height: 22px;
   text-decoration: none;
-  padding: 0 10px;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
