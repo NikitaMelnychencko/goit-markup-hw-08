@@ -778,7 +778,7 @@ body.modal-open .header-container--flex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 .site-nav-mobile__link {
